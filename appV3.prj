@@ -1,0 +1,218 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration file="F:\Ingenieria Biomedica - VIU\Codigo Brugada\appV3.prj" location="F:\Ingenieria Biomedica - VIU\Codigo Brugada" name="appV3" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>app_frag_QRS_Brugada</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>3.0</param.version>
+    <param.authnamewatermark>Ing. Anthony Rey, Arteaga Castro</param.authnamewatermark>
+    <param.email>ingenio.biomedico2020@gmail.com</param.email>
+    <param.company>INGENIO BIOMEDICO E.I.R.L.</param.company>
+    <param.summary />
+    <param.description>App que contiene Algoritmo que permite la deteccion de fragmentacion e identificacion de su morfologia asociada, posee una sensitividad del 78% y especificidad del 69%. Se recomienda su actualizacion y mejora continua.</param.description>
+    <param.screenshot />
+    <param.guid />
+    <param.installpath.string>\INGENIO BIOMEDICO E.I.R.L.\app_frag_QRS_Brugada\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\appV3\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\appV3\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\appV3\for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}\appV3</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <param.native.matlab>false</param.native.matlab>
+    <param.checkbox>false</param.checkbox>
+    <param.example />
+    <param.help.text>Syntax 
+	  -? 
+	 
+ Input Arguments 
+	 -?  print help on how to use the application 
+	 input arguments 
+ Description 
+ 	 App que contiene Algoritmo que permite la deteccion de fragmentacion e identificacion de su morfologia asociada, posee una sensitividad del 78% y especificidad del 69%. Se recomienda su actualizacion y mejora continua.</param.help.text>
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.summary />
+      <param.screenshot />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.install.notes />
+      <param.target.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.target.type />
+      <param.support.packages />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+      <param.native.matlab />
+      <param.checkbox />
+      <param.example />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\appV3.mlapp</file>
+    </fileset.main>
+    <fileset.resources />
+    <fileset.package />
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\BRAUN.png</file>
+      <file>${PROJECT_ROOT}\deteccion_ECG.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\ADC2realunits.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\ADC2units.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\adjust_string.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\AnnotationFilterConvert.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\calc_btime.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\colvec.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\cprintf.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\disp_option_enumeration.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\disp_string_framed.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\ECGformat.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\ECGtask.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\ECGtask_do_nothing.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\ECGwrapper.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\isAHAformat.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\isHESformat.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\isISHNEformat.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\list_all_ECGtask.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\matformat_definitions.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\parse_pids.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\progress_bar.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\rdsign212.mexw64</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\read_310_format.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\read_311_format.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\read_AHA_ann.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\read_AHA_format.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\read_AHA_header.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\read_ECG.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\read_HES_ann.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\read_HES_format.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\read_HES_header.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\read_ishne_ann.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\read_ishne_format.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\read_ishne_header.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\read_Mortara_format.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\read_Mortara_header.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\readannot.mexw64</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\readheader.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\rowvec.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\Seconds2HMS.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\tablas_y_constantes.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\TaskPartition.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\wavedet\isqrs.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\wavedet\pos2ann.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\wavedet\qspfilt5.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\wavedet\wavedet.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\wavedet\wavt5.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\writeannot.m</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\writeannot.mexw64</file>
+      <file>${PROJECT_ROOT}\ecg-kit-0.1.6\common\writeheader.m</file>
+      <file>${PROJECT_ROOT}\Ic24.png</file>
+      <file>${PROJECT_ROOT}\INGENIO.png</file>
+      <file>${PROJECT_ROOT}\INO.png</file>
+      <file>${PROJECT_ROOT}\Logo_VIU.png</file>
+      <file>${PROJECT_ROOT}\morfologia_HAAR.m</file>
+      <file>${PROJECT_ROOT}\parametros.mat</file>
+      <file>${PROJECT_ROOT}\pre-ecg7.mat</file>
+      <file>${PROJECT_ROOT}\pre-ecg7_ECG_delineation.mat</file>
+      <file>${PROJECT_ROOT}\pre-ecg7_QRS_detection.mat</file>
+      <file>${PROJECT_ROOT}\pre_procesamientoECG.m</file>
+      <file>${PROJECT_ROOT}\segmentacion_ECG.m</file>
+      <file>${PROJECT_ROOT}\TipoM.png</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\appV3\for_testing" name="app_frag_QRS_Brugada.exe" optional="false">F:\Ingenieria Biomedica - VIU\Codigo Brugada\appV3\for_testing\app_frag_QRS_Brugada.exe</file>
+      <file location="${PROJECT_ROOT}\appV3\for_testing" name="splash.png" optional="false">F:\Ingenieria Biomedica - VIU\Codigo Brugada\appV3\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\appV3\for_testing" name="readme.txt" optional="true">F:\Ingenieria Biomedica - VIU\Codigo Brugada\appV3\for_testing\readme.txt</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\Polyspace\R2021a</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="gpucoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="neuralnetwork" />
+        <toolbox name="polyspacebugfinder" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+      <toolbox>
+        <polyspacebugfinder>
+          <enabled>true</enabled>
+        </polyspacebugfinder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
